@@ -13,4 +13,15 @@ Find data on the regents scores scored and funding each school gets for the 32 N
 * [Data on the regents scores scored and funding each school receives](https://data.nysed.gov/downloads.php)
 * [Data on each district's economics](https://www.budget.ny.gov/schoolFunding/2021/new-york-city/index.html)
 
+## Findings
+The top two districts in NYC is District 2 and District 26. The question is why is this so. From the chart below we see that District 2 has more students not from economically disadvantaged families than economically disadvantaged families.
+![Economically Disadvantaged Ratio Across Districts](images/wealth.PNG)
+From the logistic regression below, we can see that there is a relationship between a student’s score and whether or not they are economically disadvantaged. As the score decreases, there is a higher chance that the students are economically disadvantaged.
+![Logistic Regression: Probability of Being Economically Disadvtange by the Mean Scale Score](images/regression.PNG)
+Given that a Level 2 is below expectation, I used the calculated logistic regression to get the probability that a student who scored 590 was at an economical disadvantage. The result was pretty bad. There's an 86.18% probability that the students are at an economic disadvantage for 2019 and 77.5% for 2021 if they scored a 590. Given that Level 4 is above standard, I used the calculated logistic regression to get the probability that a student who scored 615 (around 4) and the result were pretty bad again. It is very unlikely for an economically disadvantaged student to do excellent in school. There is a 7.8% chance that a student of economic disadvantage will score 615 for 2019, but was better in 2021 at 19.22%, given the fact that not every school required their students to take the regent in 2021. 
+![NYC Regent Raw Score to Performance Level](images/chart.PNG)
+
+## Conclusion 
+In conclusion the regent scores from the 2021 dataset wasn't conclusive enough to use for measuring the impact of Covid-19 on students. This was mainly because students in the 2020-21 school year were not required to take the NYS regents. Students had the option to opt in to take the regents, therefore the score was more skewed as those who are more confident in their ability would take it. On the other hand, a key take away from this project is that school funding in NYC doesn’t have a big impact on the student’s regent score and that whether the student is from an economically disadvantaged family has more impact. Through exploring with the researcher files from the New York State Education Department website, it is now clear why certain districts score better on the regents than others. Wealth of the child’s parents plays a huge part. If a child comes from a wealthy family that lives comfortably, they are more likely to score higher in comparison to kids from economically disadvantaged families. 
+
 
